@@ -1,0 +1,12 @@
+USE master;
+go
+
+create database Cus;
+go
+
+alter database Cus
+Modify name = Customer;
+go
+
+drop database Customer;
+go
