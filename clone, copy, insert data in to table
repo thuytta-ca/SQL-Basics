@@ -2,7 +2,7 @@
 SELECT * FROM customer;
 go
 
-/*   2 table have exact the same column
+/*   2 table have exact the same all column
 -- clone table, copy all column from custom to customer1
 SELECT * INTO custome1 FROM customer;
 go
@@ -11,14 +11,14 @@ go
 DELETE FROM customer1
 go
 
--- insert data from customer to customer 1, the they have exact same column
+-- insert data from customer to customer 1, the they have exact same all column
 INSERT INTO customer1 SELECT * FROM customer;
 go
 */
 
 --
 
-/* 2 table not have exact the same column
+/* 2 table don't have exact the same all columns, just some columns
 -- clone table, copy FirstName column from custom to customer1
 SELECT FirstName INTO custome1 FROM customer;
 go
@@ -27,7 +27,8 @@ go
 DELETE FROM customer1
 go
 
--- insert data into customer 1 from customer, the they don't have exact the same column
+-- insert data into customer 1 from customer, 
+-- they don't have exact the same all column but they match the FirstName colum
 INSERT INTO customer1 SELECT FirstName FROM customer;
 go
 
