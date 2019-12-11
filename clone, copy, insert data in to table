@@ -2,12 +2,19 @@
 SELECT * FROM customer;
 go
 
+/* copy the columns of this table into another table without data but in the same data types
+-- 1 never equal 2, copy schema,
+SELECT * INTO custome1 FROM custome WHERE 1=2
+go
+
+*/
+
 /*   2 table have exact the same all column
 -- clone table, copy all column from custom to customer1
 SELECT * INTO custome1 FROM customer;
 go
 
---delete all data from customer1
+-- delete all data from customer1
 DELETE FROM customer1
 go
 
