@@ -1,10 +1,10 @@
 
-select * from customer;
+SELECT * FROM customer;
 go
 
 -- clone table
-select * into custome1 from customer;
+SELECT * INTO custome1 FROM customer;
 go
 
-select * from customer1;
+SELECT * FROM customer1;
 go
