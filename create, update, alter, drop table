@@ -5,4 +5,6 @@ create table customer(
 	,LastName varchar(50)
 );
 
+--it's not easy to rollback the table you just drop
+drop table customer1;
 
