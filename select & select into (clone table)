@@ -5,3 +5,6 @@ go
 -- clone table
 select * into custome1 from customer;
 go
+
+select * from customer1;
+go
