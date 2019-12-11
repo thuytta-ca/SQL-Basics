@@ -1,0 +1,15 @@
+
+SELECT * FROM customer;
+go
+
+-- clone table, copy all data from custom to customer1
+SELECT * INTO custome1 FROM customer;
+go
+
+--delete all data from customer1
+DELETE FROM customer1
+go
+
+-- insert data from customer to customer 1, the column is match together
+INSERT INTO customer1 SELECT * FROM customer;
+go
