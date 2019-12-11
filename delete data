@@ -1,2 +1,5 @@
 -- delete all information in the table
 DELETE FROM customer;
+
+--delete row with condition
+
