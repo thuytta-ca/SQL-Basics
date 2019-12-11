@@ -1,3 +1,9 @@
--- copy shcema from customer table to another table
+-- copy from customer table to another table without data but in the same data types is call shcema 
+-- 1 never equal 2, copy schema
+
+SELECT * INTO custome1 FROM custome WHERE 1=2
+go
+
+*/
 
 
