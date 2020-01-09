@@ -1,0 +1,7 @@
+
+/*----AdventureWorks2014-----*/
+
+select LoginID, JobTitle, BirthDate, VacationHours 
+from HumanResources.Employee 
+where VacationHours > 0 and VacationHours < 10 
+order by JobTitle
